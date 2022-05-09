@@ -5,10 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MIDI test</title>
-    <script src="app.js"></script>
+    <link rel="stylesheet" href="mystyle.css">
 </head>
 <body>
-    <h1>MIDI Octave Test</h1>
+    <br>
+    <div class="myBox">
+        <h1>MIDI Octave Test</h1>
+        <h3>Test Button:</h3>
+        <button class="button" type="button" onclick="myFunc()">Click me</button><br>
+        <br>
+        <h3>Octave Button:</h3>
+        <button  class="button" type="button" onclick="midiOctave([48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59])">-1 Octave</button>
+        <button class="button" type="button" onclick="midiOctave([48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59])">+1 Octave</button><br><br>
+        <h3>MIDI Channel Select:</h3>
+        <button class="button" type="button" onclick="midiOctave([48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59])">-1 MIDI Channel</button>
+        <button class="button" type="button" onclick="midiOctave([48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59])">+1 MIDI Channel</button>
+        <br>
+    </div>
     
+    
+    <script src="app.js"></script>
 </body>
 </html>
