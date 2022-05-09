@@ -11,15 +11,22 @@
     <br>
     <div class="myBox">
         <h1>MIDI Octave Test</h1>
+        <!-- TEST BUTTON -->
         <h3>Test Button:</h3>
-        <button class="button" type="button" onclick="myFunc()">Click me</button><br>
+        <button class="buttonStyle" type="button" onclick="myFunc()">Click me</button><br>
         <br>
+        <!-- OCTAVE BUTTON -->
         <h3>Octave Button:</h3>
-        <button  class="button" type="button" onclick="midiOctave([48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59])">-1 Octave</button>
-        <button class="button" type="button" onclick="midiOctave([48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59])">+1 Octave</button><br><br>
-        <h3>MIDI Channel Select:</h3>
-        <button class="button" type="button" onclick="midiOctave([48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59])">-1 MIDI Channel</button>
-        <button class="button" type="button" onclick="midiOctave([48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59])">+1 MIDI Channel</button>
+        <button  class="buttonStyle" type="button" onclick="midiOctave([48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59])">-1 Octave</button>
+        <button class="buttonStyle" type="button" onclick="midiOctave([48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59])">+1 Octave</button><br><br>
+        <h3>MIDI Channel Select (1-16):</h3>
+        
+        <!-- MIDI CHANNEL SELECT -->
+        <button class="buttonStyle" type="button" onclick="decrement()">-</button>
+        <input class="buttonStyle" id=midiChannelSelect type=number min=1 max=16 step=1 value="1" >
+        <button class="buttonStyle" type="button" onclick="increment()">+</button>
+        <br>
+        <input class="buttonStyle" type="submit" value="Submit">
         <br>
     </div>
     
